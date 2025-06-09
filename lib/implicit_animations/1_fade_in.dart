@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+//ANIMATED OPACITY
+
 const owlUrl =
     'https://raw.githubusercontent.com/flutter/website/main/src/content/assets/images/docs/owl.jpg';
 
