@@ -2,6 +2,7 @@ import 'package:animations_flutter/implicit_animations/1_fade_in.dart';
 import 'package:animations_flutter/implicit_animations/2_shape_shifting.dart';
 import 'package:animations_flutter/implicit_animations/3_animated_align.dart';
 import 'package:animations_flutter/implicit_animations/4_animated_scale.dart';
+import 'package:animations_flutter/implicit_animations/5_animated_rotation.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -46,6 +47,11 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed:
                   () => navigator(context, const LogoScale()),
               child: Text('Animated Scale'),
+            ),
+            ElevatedButton(
+              onPressed:
+                  () => navigator(context, const LogoRotate()),
+              child: Text('Animated Rotation'),
             ),
           ],
         ),
