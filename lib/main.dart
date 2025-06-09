@@ -1,4 +1,4 @@
-import 'package:animations_flutter/implicit_animations/2_shape_shifting.dart';
+import 'package:animations_flutter/pages/my_home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,10 +16,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      //ANIMATED OPACITY
-      // home: const FadeIn(),
-      //ANIMATED CONTAINER
-      home: const ShapeShifting(),
+      home: const MyHomePage(),
     );
   }
 }
