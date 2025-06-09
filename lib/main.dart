@@ -1,4 +1,4 @@
-import 'package:animations_flutter/pages/my_home_page.dart';
+import 'package:animations_flutter/implicit_animations/1_fade_in.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Animations'),
+      home: const FadeIn(),
     );
   }
 }
