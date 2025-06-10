@@ -5,6 +5,7 @@ import 'package:animations_flutter/implicit_animations/4_animated_scale.dart';
 import 'package:animations_flutter/implicit_animations/5_animated_rotation.dart';
 import 'package:animations_flutter/implicit_animations/6_animated_slide.dart';
 import 'package:animations_flutter/implicit_animations/7_animated_padding.dart';
+import 'package:animations_flutter/implicit_animations/8_animated_positioned.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -64,6 +65,11 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed:
                   () => navigator(context, const AnimatedPaddingExample()),
               child: Text('Animated Padding'),
+            ),
+            ElevatedButton(
+              onPressed:
+                  () => navigator(context, const AnimatedPositionedExample()),
+              child: Text('Animated Positioned'),
             ),
           ],
         ),
