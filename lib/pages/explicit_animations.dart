@@ -1,4 +1,5 @@
 import 'package:animations_flutter/explicit_animations/1_explicit_animation.dart';
+import 'package:animations_flutter/explicit_animations/2_staggered_animation.dart';
 import 'package:flutter/material.dart';
 
 class ExplicitAnimations extends StatefulWidget {
@@ -27,6 +28,10 @@ class _ExplicitAnimationsState extends State<ExplicitAnimations> {
             ElevatedButton(
               onPressed: () => navigator(context, const ExplicitAnimation()),
               child: Text('Explitit Animation'),
+            ),
+            ElevatedButton(
+              onPressed: () => navigator(context, StaggerDemo()),
+              child: Text('Staggered Animation'),
             ),
           ],
         ),
