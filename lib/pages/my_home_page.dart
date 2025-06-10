@@ -1,3 +1,4 @@
+import 'package:animations_flutter/implicit_animations/10_animated_size.dart';
 import 'package:animations_flutter/implicit_animations/1_fade_in.dart';
 import 'package:animations_flutter/implicit_animations/2_shape_shifting.dart';
 import 'package:animations_flutter/implicit_animations/3_animated_align.dart';
@@ -76,6 +77,11 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed:
                   () => navigator(context, const AnimatedCrossFadeExample()),
               child: Text('Animated CrossFade'),
+            ),
+            ElevatedButton(
+              onPressed:
+                  () => navigator(context, const AnimatedSizeExample()),
+              child: Text('Animated Size'),
             ),
           ],
         ),
