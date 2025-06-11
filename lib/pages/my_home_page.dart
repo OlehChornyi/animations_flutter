@@ -11,8 +11,8 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   void navigator(BuildContext context, Widget screen) => Navigator.of(
-                    context,
-                  ).push(MaterialPageRoute(builder: (context) => screen));
+    context,
+  ).push(MaterialPageRoute(builder: (context) => screen));
 
   @override
   Widget build(BuildContext context) {
@@ -26,13 +26,11 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             ElevatedButton(
-              onPressed:
-                  () => navigator(context, const ImplicitAnimations()),
+              onPressed: () => navigator(context, const ImplicitAnimations()),
               child: Text('Implicit Animations'),
             ),
             ElevatedButton(
-              onPressed:
-                  () => navigator(context, const ExplicitAnimations()),
+              onPressed: () => navigator(context, const ExplicitAnimations()),
               child: Text('Explicit Animations'),
             ),
           ],
@@ -41,3 +39,5 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
+

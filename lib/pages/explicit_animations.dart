@@ -4,6 +4,7 @@ import 'package:animations_flutter/explicit_animations/3_hero_animation.dart';
 import 'package:animations_flutter/explicit_animations/4_repeating_animation.dart';
 import 'package:animations_flutter/explicit_animations/5_list_animation.dart';
 import 'package:animations_flutter/explicit_animations/6_card_swipe.dart';
+import 'package:animations_flutter/explicit_animations/7_carousel.dart';
 import 'package:flutter/material.dart';
 
 class ExplicitAnimations extends StatefulWidget {
@@ -52,6 +53,10 @@ class _ExplicitAnimationsState extends State<ExplicitAnimations> {
             ElevatedButton(
               onPressed: () => navigator(context, CardSwipeDemo()),
               child: Text('Card Swipe'),
+            ),
+            ElevatedButton(
+              onPressed: () => navigator(context, CarouselDemo()),
+              child: Text('Carousel'),
             ),
           ],
         ),
