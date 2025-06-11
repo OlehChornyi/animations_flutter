@@ -1,3 +1,4 @@
+import 'package:animations_flutter/explicit_animations/10_physics_card_drag.dart';
 import 'package:animations_flutter/explicit_animations/1_explicit_animation.dart';
 import 'package:animations_flutter/explicit_animations/2_staggered_animation.dart';
 import 'package:animations_flutter/explicit_animations/3_hero_animation.dart';
@@ -67,6 +68,10 @@ class _ExplicitAnimationsState extends State<ExplicitAnimations> {
             ElevatedButton(
               onPressed: () => navigator(context, ExpandCardDemo()),
               child: Text('Expand Card'),
+            ),
+            ElevatedButton(
+              onPressed: () => navigator(context, PhysicsCardDragDemo()),
+              child: Text('Physics Card Drag'),
             ),
           ],
         ),
