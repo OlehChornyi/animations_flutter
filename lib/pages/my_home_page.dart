@@ -1,5 +1,6 @@
 import 'package:animations_flutter/pages/explicit_animations.dart';
 import 'package:animations_flutter/pages/implicit_animations.dart';
+import 'package:animations_flutter/pages/layout_animations.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -32,6 +33,10 @@ class _MyHomePageState extends State<MyHomePage> {
             ElevatedButton(
               onPressed: () => navigator(context, const ExplicitAnimations()),
               child: Text('Explicit Animations'),
+            ),
+            ElevatedButton(
+              onPressed: () => navigator(context, const LayoutAnimations()),
+              child: Text('Layout Animations'),
             ),
           ],
         ),
