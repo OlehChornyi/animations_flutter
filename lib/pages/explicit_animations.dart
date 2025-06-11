@@ -1,5 +1,6 @@
 import 'package:animations_flutter/explicit_animations/10_physics_card_drag.dart';
 import 'package:animations_flutter/explicit_animations/11_gradient_transition.dart';
+import 'package:animations_flutter/explicit_animations/12_registration_form.dart';
 import 'package:animations_flutter/explicit_animations/1_explicit_animation.dart';
 import 'package:animations_flutter/explicit_animations/2_staggered_animation.dart';
 import 'package:animations_flutter/explicit_animations/3_hero_animation.dart';
@@ -77,6 +78,10 @@ class _ExplicitAnimationsState extends State<ExplicitAnimations> {
             ElevatedButton(
               onPressed: () => navigator(context, GradientTransition()),
               child: Text('Gradient Transition'),
+            ),
+            ElevatedButton(
+              onPressed: () => navigator(context, RegistrationForm()),
+              child: Text('Registration Form'),
             ),
           ],
         ),
