@@ -1,5 +1,6 @@
 import 'package:animations_flutter/layout_animations/1_appbar_search.dart';
 import 'package:animations_flutter/layout_animations/2_scroll_aware_appbar.dart';
+import 'package:animations_flutter/layout_animations/3_custom_appbar.dart';
 import 'package:flutter/material.dart';
 
 class LayoutAnimations extends StatefulWidget {
@@ -32,6 +33,10 @@ class _LayoutAnimationsState extends State<LayoutAnimations> {
             ElevatedButton(
               onPressed: () => navigator(context, const ScrollAppBarDemo()),
               child: Text('Scroll-Aware AppBar'),
+            ),
+            ElevatedButton(
+              onPressed: () => navigator(context, const StackedAppBar()),
+              child: Text('Custom AppBar'),
             ),
           ],
         ),
