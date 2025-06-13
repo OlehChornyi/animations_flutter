@@ -3,6 +3,7 @@ import 'package:animations_flutter/layout_animations/2_scroll_aware_appbar.dart'
 import 'package:animations_flutter/layout_animations/3_custom_appbar.dart';
 import 'package:animations_flutter/layout_animations/4_animated_navbar.dart';
 import 'package:animations_flutter/layout_animations/5_slide_navbar.dart';
+import 'package:animations_flutter/layout_animations/6_animated_widgets.dart';
 import 'package:flutter/material.dart';
 
 class LayoutAnimations extends StatefulWidget {
@@ -47,6 +48,10 @@ class _LayoutAnimationsState extends State<LayoutAnimations> {
             ElevatedButton(
               onPressed: () => navigator(context, const SlideNavbar()),
               child: Text('Slide Navbar'),
+            ),
+            ElevatedButton(
+              onPressed: () => navigator(context, const AnimatedWidgets()),
+              child: Text('Animated Widgets'),
             ),
           ],
         ),
