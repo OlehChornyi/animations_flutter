@@ -4,6 +4,7 @@ import 'package:animations_flutter/layout_animations/3_custom_appbar.dart';
 import 'package:animations_flutter/layout_animations/4_animated_navbar.dart';
 import 'package:animations_flutter/layout_animations/5_slide_navbar.dart';
 import 'package:animations_flutter/layout_animations/6_animated_widgets.dart';
+import 'package:animations_flutter/layout_animations/7_buttons_with_progress.dart';
 import 'package:flutter/material.dart';
 
 class LayoutAnimations extends StatefulWidget {
@@ -52,6 +53,10 @@ class _LayoutAnimationsState extends State<LayoutAnimations> {
             ElevatedButton(
               onPressed: () => navigator(context, const AnimatedWidgets()),
               child: Text('Animated Widgets'),
+            ),
+            ElevatedButton(
+              onPressed: () => navigator(context, const ButtonsWithProgress()),
+              child: Text('Buttons With Progress'),
             ),
           ],
         ),
