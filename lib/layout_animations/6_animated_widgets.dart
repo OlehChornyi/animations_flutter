@@ -1,6 +1,7 @@
 import 'package:animations_flutter/layout_animations/widgets/3d_button.dart';
 import 'package:animations_flutter/layout_animations/widgets/animated_button.dart';
 import 'package:animations_flutter/layout_animations/widgets/animated_gradient_button.dart';
+import 'package:animations_flutter/layout_animations/widgets/floating_menu.dart';
 import 'package:flutter/material.dart';
 
 class AnimatedWidgets extends StatelessWidget {
@@ -34,6 +35,15 @@ class AnimatedWidgets extends StatelessWidget {
             const ThreeDButton(),
           ],
         ),
+      ),
+      floatingActionButton: FloatingMenu(
+        speedDialChildren: [
+          SpeedDialChild(child: Icon(Icons.phone), onPressed: () {}),
+          SpeedDialChild(child: Icon(Icons.apple), onPressed: () {}),
+          SpeedDialChild(child: Icon(Icons.travel_explore), onPressed: () {}),
+          SpeedDialChild(child: Icon(Icons.toys), onPressed: () {}),
+        ],
+        type: FloatingBtnType.top,
       ),
     );
   }
