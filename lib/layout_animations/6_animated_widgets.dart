@@ -2,6 +2,7 @@ import 'package:animations_flutter/layout_animations/widgets/3d_button.dart';
 import 'package:animations_flutter/layout_animations/widgets/animated_button.dart';
 import 'package:animations_flutter/layout_animations/widgets/animated_gradient_button.dart';
 import 'package:animations_flutter/layout_animations/widgets/floating_menu.dart';
+import 'package:animations_flutter/layout_animations/widgets/radial_gauge.dart';
 import 'package:flutter/material.dart';
 
 class AnimatedWidgets extends StatelessWidget {
@@ -33,6 +34,7 @@ class AnimatedWidgets extends StatelessWidget {
             ),
             const SizedBox(height: 48),
             const ThreeDButton(),
+            MyCustomRadialGauge(),
           ],
         ),
       ),
