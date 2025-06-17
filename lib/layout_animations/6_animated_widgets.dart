@@ -1,3 +1,4 @@
+import 'package:animations_flutter/layout_animations/widgets/3d_button.dart';
 import 'package:animations_flutter/layout_animations/widgets/animated_button.dart';
 import 'package:animations_flutter/layout_animations/widgets/animated_gradient_button.dart';
 import 'package:flutter/material.dart';
@@ -29,6 +30,8 @@ class AnimatedWidgets extends StatelessWidget {
                 print("Hello World!");
               },
             ),
+            const SizedBox(height: 48),
+            const ThreeDButton(),
           ],
         ),
       ),
