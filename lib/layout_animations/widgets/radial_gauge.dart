@@ -1,6 +1,3 @@
-// --- a/lib/gauge.dart
-// +++ b/lib/gauge.dart
-// @@ -2,7 +2,37 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -60,9 +57,12 @@ class _MyCustomRadialGaugeState extends State<MyCustomRadialGauge>
           child: Center(
             child: Column(
               children: [
-                Container(height: screenHeight * 0.01, color: Colors.transparent),
+                Container(
+                  height: screenHeight * 0.01,
+                  color: Colors.transparent,
+                ),
                 Text(
-                  '${(100 * _fraction *current / maxValue).toStringAsFixed(0)}%',
+                  '${(100 * _fraction * current / maxValue).toStringAsFixed(0)}%',
                   style: TextStyle(color: Colors.grey, fontSize: 50.0),
                 ),
                 Container(
