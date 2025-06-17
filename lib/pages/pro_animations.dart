@@ -1,12 +1,5 @@
-import 'package:animations_flutter/layout_animations/1_appbar_search.dart';
-import 'package:animations_flutter/layout_animations/2_scroll_aware_appbar.dart';
-import 'package:animations_flutter/layout_animations/3_custom_appbar.dart';
-import 'package:animations_flutter/layout_animations/4_animated_navbar.dart';
-import 'package:animations_flutter/layout_animations/5_slide_navbar.dart';
-import 'package:animations_flutter/layout_animations/6_animated_widgets.dart';
-import 'package:animations_flutter/layout_animations/7_buttons_with_progress.dart';
-import 'package:animations_flutter/layout_animations/8_floationg_button_animation.dart';
-import 'package:animations_flutter/pro_animations/pro_navbar.dart';
+import 'package:animations_flutter/pro_animations/1_pro_navbar.dart';
+import 'package:animations_flutter/pro_animations/2_intro_screen.dart';
 import 'package:flutter/material.dart';
 
 class ProAnimations extends StatefulWidget {
@@ -34,7 +27,11 @@ class _ProAnimationsState extends State<ProAnimations> {
           children: <Widget>[
             ElevatedButton(
               onPressed: () => navigator(context, const IconRowPage()),
-              child: Text('Pro NavBart'),
+              child: Text('Pro NavBar'),
+            ),
+            ElevatedButton(
+              onPressed: () => navigator(context, const IntroScreen1()),
+              child: Text('Intro Screen'),
             ),
           ],
         ),
