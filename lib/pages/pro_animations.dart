@@ -1,5 +1,6 @@
 import 'package:animations_flutter/pro_animations/1_pro_navbar.dart';
 import 'package:animations_flutter/pro_animations/2_intro_screen.dart';
+import 'package:animations_flutter/pro_animations/3_hero_widget.dart';
 import 'package:flutter/material.dart';
 
 class ProAnimations extends StatefulWidget {
@@ -32,6 +33,10 @@ class _ProAnimationsState extends State<ProAnimations> {
             ElevatedButton(
               onPressed: () => navigator(context, const IntroScreen1()),
               child: Text('Intro Screen'),
+            ),
+            ElevatedButton(
+              onPressed: () => navigator(context, const HeroFrom()),
+              child: Text('Hero Animation'),
             ),
           ],
         ),
