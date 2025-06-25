@@ -4,6 +4,7 @@ import 'package:animations_flutter/pro_animations/3_hero_widget.dart';
 import 'package:animations_flutter/pro_animations/4_donat_chart.dart';
 import 'package:animations_flutter/pro_animations/5_tooltip_animation.dart';
 import 'package:animations_flutter/pro_animations/6_card_flip.dart';
+import 'package:animations_flutter/pro_animations/7_card_flip_2.dart';
 import 'package:flutter/material.dart';
 
 class ProAnimations extends StatefulWidget {
@@ -59,6 +60,10 @@ class _ProAnimationsState extends State<ProAnimations> {
             ElevatedButton(
               onPressed: () => navigator(context, CardFlip()),
               child: Text('Card Flip Animation'),
+            ),
+            ElevatedButton(
+              onPressed: () => navigator(context, CardFlipTwo()),
+              child: Text('Card Flip 2 Animation'),
             ),
           ],
         ),
