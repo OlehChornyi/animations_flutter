@@ -1,4 +1,4 @@
-import 'package:animations_flutter/implicit_animations/1_fade_in.dart';
+import 'package:animations_flutter/pro_animations/10_clap_animation.dart';
 import 'package:animations_flutter/pro_animations/1_pro_navbar.dart';
 import 'package:animations_flutter/pro_animations/2_intro_screen.dart';
 import 'package:animations_flutter/pro_animations/3_hero_widget.dart';
@@ -75,6 +75,10 @@ class _ProAnimationsState extends State<ProAnimations> {
             ElevatedButton(
               onPressed: () => navigator(context, FadeInImg()),
               child: Text('FadeIn Image Animation'),
+            ),
+            ElevatedButton(
+              onPressed: () => navigator(context, ClapAnimation()),
+              child: Text('Clap Animation'),
             ),
           ],
         ),
