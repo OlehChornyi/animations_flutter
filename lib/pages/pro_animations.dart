@@ -1,4 +1,5 @@
 import 'package:animations_flutter/pro_animations/10_clap_animation.dart';
+import 'package:animations_flutter/pro_animations/11_pulsing_message.dart';
 import 'package:animations_flutter/pro_animations/1_pro_navbar.dart';
 import 'package:animations_flutter/pro_animations/2_intro_screen.dart';
 import 'package:animations_flutter/pro_animations/3_hero_widget.dart';
@@ -80,9 +81,14 @@ class _ProAnimationsState extends State<ProAnimations> {
               onPressed: () => navigator(context, ClapAnimation()),
               child: Text('Clap Animation'),
             ),
+            ElevatedButton(
+              onPressed: () => navigator(context, PulsingMessage()),
+              child: Text('Pulsing Message Animation'),
+            ),
           ],
         ),
       ),
     );
   }
 }
+
